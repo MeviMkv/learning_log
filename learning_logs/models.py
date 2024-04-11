@@ -19,3 +19,17 @@ class Entry(models.Model):
             return f"{self.text[:50]}..."
         else:
             return self.text
+        
+# class Entry_2(models.Model):
+#     Entry = models.ForeignKey(Entry, on_delete=models.CASCADE)
+#     text = models.TextField()
+#     date_added = models.DateTimeField(auto_now_add=True)
+
+#     class Meta:
+#         verbose_name_plural = 'entries 2'
+
+#     def __str__(self):
+#         if len(self.text) >50:
+#             return f"{self.text[:50]}..."
+#         else:
+#             return self.text
